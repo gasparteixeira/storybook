@@ -11,10 +11,10 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "@storybook/react": "^5.0.11",
-    "@storybook/addon-actions": "^5.0.11",
-    "@storybook/addon-links": "^5.0.11",
-    "@storybook/addons": "^5.0.11",
+    "@storybook/react": "4.1.18",
+    "@storybook/addon-actions": "4.1.18",
+    "@storybook/addon-links": "4.1.18",
+    "@storybook/addons": "4.1.18",
     "@babel/core": "^7.4.4",
     "babel-loader": "^8.0.5"
   }
