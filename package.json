@@ -3,19 +3,42 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -c .storybook -o .out"
   },
   "author": "Gaspar Teixeira <gaspar.teixeira@gmail.com> (gasparteixeira.com)",
   "license": "MIT",
-  "dependencies": {},
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
+    "react-router-dom": "^5.0.0",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.0.2"
+  },
   "devDependencies": {
-    "@storybook/react": "4.1.18",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
     "@storybook/addon-actions": "4.1.18",
     "@storybook/addon-links": "4.1.18",
     "@storybook/addons": "4.1.18",
-    "@babel/core": "^7.4.4",
-    "babel-loader": "^8.0.5"
+    "@storybook/react": "4.1.18",
+    "babel-loader": "^8.0.5",
+    "react-hot-loader": "^4.8.4",
+    "redux-devtools-extension": "^2.13.8",
+    "storybook-addon-redux-listener": "^0.1.7",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.3.1"
   }
 }
